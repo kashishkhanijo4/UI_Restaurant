@@ -19,7 +19,11 @@ const Contact = () => {
  
       </Box>
 
-<Box sx={{m:3, width:"600px"}}
+<Box sx={{m:3, width:"600px",
+     ml:10,
+     "@media (max-width:600px)" :
+     {width:"300px"}
+}}>
       <TableContainer component={Paper}>
      <Table aria-label='"contact table'>
 
@@ -56,7 +60,7 @@ const Contact = () => {
      </Table>
 
       </TableContainer>
-        
+        </Box>
     </Layout>
   )
 }
