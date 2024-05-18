@@ -6,6 +6,7 @@ import {Link } from 'react-router-dom';
 import {
   AppBar,
   Box,
+  Divider,
   Drawer,
   IconButton,
   Toolbar,
@@ -35,8 +36,8 @@ const drawer= (
 
       {/* now creating navigation list  */}
 
-      
-        <ul className="mobile-navigation-menu">
+      <Divider/>
+        <ul className="mobile-navigation">
           <li>
           <Link to={'/'}>Home</Link>
           </li>
@@ -125,7 +126,10 @@ const drawer= (
        >
         {drawer}
       </Drawer>
-      <Toolbar/>
+      </Box>
+      <Box sx={{ p:1 }}>
+      
+      <Toolbar/> 
       </Box>
     </Box>
 
