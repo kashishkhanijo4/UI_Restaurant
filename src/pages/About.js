@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout/Layout';
 import { Box, Typography } from '@mui/material';
+import '../App.css'
 
 const About = () => {
   return (
@@ -28,7 +29,7 @@ sx={{
 }}
 >
   <Typography>
-    Welcome To My Restaurant
+   <h1 className='heading'> Welcome To My Restaurant</h1>
   </Typography>
 
   <p>

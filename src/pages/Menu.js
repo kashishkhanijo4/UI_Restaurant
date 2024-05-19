@@ -1,12 +1,21 @@
-import React from 'react'
+
+import React from "react";
 import Layout from '../components/layout/Layout'
-import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
-import {Menulist} from '../data/data'
+import { Menulist} from "../data/data";
+
+import {
+  Box,
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+} from "@mui/material";
 
 const Menu = () => {
   return (
     <Layout>
-   <Box x={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         {Menulist.map((menu) => (
           <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
             <CardActionArea>
@@ -25,10 +34,9 @@ const Menu = () => {
             </CardActionArea>
           </Card>
         ))}
-    
-   </Box>
-</Layout>
-  )
-}
+      </Box>
+    </Layout>
+  );
+};
 
 export default Menu;
