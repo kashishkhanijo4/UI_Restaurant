@@ -4,11 +4,11 @@ import Idli from '../images/idli.jpg'
 import  panner from '../images/paneer.jpg'
 import Gujrati from '../images/gujrati.jpeg'
 import Masala from '../images/masala.jpg'
-import { Description } from '@mui/icons-material'
+import {Description } from '@mui/icons-material'
 import Menu from '../pages/Menu'
 
 
-export const Menulist =[
+export const Menulist = [
 
     {
         name:'Dosa',
